@@ -1,0 +1,84 @@
+.container {
+    background-color: #ff0094;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 10px 0px 10px;
+
+    .animation-container {
+        height: 300px;
+        position: relative;
+
+
+        .square1 {
+            border-radius: 8px;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #ffa9dbc8;
+            animation: square1-animation 4s infinite;
+        }
+
+        .square2 {
+            border-radius: 8px;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            left: calc(100% - 100px);
+            background-color: #ffa9dbc8;
+            animation: square2-animation 4s infinite;
+        }
+
+
+    }
+}
+
+
+
+
+@keyframes square1-animation {
+    0% {
+        left: 0px;
+        top: 0px;
+    }
+
+    33% {
+        left: calc(100% - 100px);
+        transform: rotate(90deg);
+        top: 0px;
+    }
+
+    66% {
+        left: calc(50% - 50px);
+        transform: rotate(-90deg);
+        top: 200px;
+    }
+
+    99% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes square2-animation {
+    0% {
+        left: calc(100% - 100px);
+        top: 0px;
+    }
+
+    33% {
+        left: calc(50% - 50px);
+        transform: rotate(-90deg);
+        top: 200px;
+    }
+
+    66% {
+        left: 0px;
+        transform: rotate(90deg);
+        top: 0px;
+    }
+
+    99% {
+        left: calc(100% - 100px);
+        top: 0px;
+    }
+}

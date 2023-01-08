@@ -1,0 +1,43 @@
+.bfs-visualizer {
+    .grid-container {
+        margin: 0px 20px 0px 20px;
+
+        .grid {
+            display: grid;
+            row-gap: 4px;
+
+            .grid-cell {
+                background: #889bff;
+                border-radius: 5px;
+            }
+
+            .start-cell {
+                background: #00ff00;
+                border-color: #00ff00;
+            }
+
+            .colored-cell {
+                background: #e0dfff;
+                border: none;
+            }
+
+            .end-cell {
+                background: #ff6a6a;
+                border-color: #ff6a6a;
+            }
+        }
+    }
+
+    .run-bfs-btn {
+        margin: 5px;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        background: #7b6aff;
+        color: white;
+    }
+}
+
+.bfs-visualizer-body {
+    background-color: #2d2d2d;
+}
